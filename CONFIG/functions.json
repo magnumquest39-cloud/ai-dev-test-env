@@ -1,0 +1,46 @@
+{
+  "functions": [
+    {
+      "name": "plan_task",
+      "description": "Создание плана и чек-листа для задачи",
+      "trigger": "задача на 5+ шагов",
+      "free": true
+    },
+    {
+      "name": "route_model",
+      "description": "Выбор бесплатной модели под задачу",
+      "trigger": "каждый запрос",
+      "free": true
+    },
+    {
+      "name": "call_agent",
+      "description": "Вызов специализированного агента",
+      "trigger": "узкая экспертиза",
+      "free": true
+    },
+    {
+      "name": "search_skill",
+      "description": "Поиск и установка скилла из store",
+      "trigger": "отсутствие нужного навыка",
+      "free": true
+    },
+    {
+      "name": "run_tests",
+      "description": "Запуск тестов после каждого изменения",
+      "trigger": "после каждого коммита",
+      "free": true
+    },
+    {
+      "name": "review_code",
+      "description": "Ревью кода, поиск багов, фиксы",
+      "trigger": "перед интеграцией",
+      "free": true
+    },
+    {
+      "name": "budget_guard",
+      "description": "Блокировка платных вызовов без согласия",
+      "trigger": "каждый вызов",
+      "free": true
+    }
+  ]
+}

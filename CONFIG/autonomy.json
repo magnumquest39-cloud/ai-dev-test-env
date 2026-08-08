@@ -1,0 +1,39 @@
+{
+  "environment": "ai-dev-test-env",
+  "version": "1.0.0",
+  "mode": "autonomic",
+  "language": "ru",
+  "autonomy": {
+    "level": "high",
+    "auto_confirm": true,
+    "confirm_required_for": [
+      "delete_repository",
+      "delete_branch",
+      "production_deploy",
+      "spending_money"
+    ]
+  },
+  "free_policy": {
+    "free_only": true,
+    "replace_paid_with_free": true,
+    "monitor_limits": true,
+    "banned": [
+      "paid_llm_api",
+      "paid_ci_minutes",
+      "paid_storage",
+      "paid_packages"
+    ]
+  },
+  "router": {
+    "model_priority": ["free_local", "free_api", "community"],
+    "agent_lookup": "search_agent_first",
+    "skill_source": "lobe-skill-store",
+    "parallel_agents": true
+  },
+  "testing": {
+    "auto_test_after_change": true,
+    "regression_on_integration": true,
+    "max_fix_iterations": 5,
+    "ci_workflow": ".github/workflows/test.yml"
+  }
+}

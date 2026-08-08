@@ -1,0 +1,14 @@
+{
+  "overrides": {
+    "enabled": true,
+    "applied_last": true,
+    "priority": 999,
+    "mode_override": "autonomic",
+    "free_only": true,
+    "language": "ru",
+    "extra_tools": ["tools/custom_tools.json"],
+    "extra_functions": ["CONFIG/functions.json"],
+    "banned_paid_services": true,
+    "auto_replace_paid": true
+  }
+}

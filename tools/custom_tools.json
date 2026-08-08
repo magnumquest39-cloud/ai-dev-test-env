@@ -1,0 +1,29 @@
+{
+  "custom_tools": [
+    {
+      "name": "free_model_switch",
+      "action": "переключение на бесплатную модель при превышении лимита",
+      "free": true
+    },
+    {
+      "name": "auto_fix",
+      "action": "автоисправление ошибок с повторным запуском тестов",
+      "free": true
+    },
+    {
+      "name": "budget_guard",
+      "action": "блокировка платных вызовов без явного согласия",
+      "free": true
+    },
+    {
+      "name": "reference_builder",
+      "action": "создание кода по референсам без платных патчей",
+      "free": true
+    },
+    {
+      "name": "ci_runner",
+      "action": "запуск бесплатного CI через GitHub Actions",
+      "free": true
+    }
+  ]
+}
